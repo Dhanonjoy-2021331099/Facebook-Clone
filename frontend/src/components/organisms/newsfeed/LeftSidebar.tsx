@@ -13,7 +13,7 @@ const LeftSidebar: React.FC = () => {
             />
           </div>
           <div>
-            <p className="text-sm font-semibold">Saiful Islam Shihab</p>
+            <p className="text-sm font-semibold">Jibon Roy</p>
           </div>
         </li>
         <li className="justify-content mb-2 flex h-12 cursor-pointer items-center space-x-2 rounded-md p-2 hover:bg-gray-200 dark:hover:bg-neutral-800">

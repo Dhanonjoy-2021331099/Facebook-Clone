@@ -219,7 +219,7 @@ const Navbar: React.FC = () => {
                   alt="dp"
                 />
                 <span className="font-semibold text-black dark:text-white">
-                  Saiful Islam Shihab
+                  Jibon Roy
                 </span>
               </Link>
 

@@ -23,15 +23,29 @@ interface IMenuAction {
 
 const menuGroups: IMenuAction[][] = [
   [
-    { icon: 'fas fa-bookmark', label: 'Save post', description: 'Add this to your saved items.' },
+    {
+      icon: 'fas fa-bookmark',
+      label: 'Save post',
+      description: 'Add this to your saved items.',
+    },
   ],
   [
     { icon: 'fas fa-bell', label: 'Turn on notifications for this post' },
     { icon: 'fas fa-info-circle', label: 'Why am I seeing this post?' },
   ],
   [
-    { icon: 'fas fa-times-circle', iconColor: 'text-red-500', label: 'Hide post', description: 'See fewer posts like this.' },
-    { icon: 'fas fa-exclamation-circle', iconColor: 'text-red-500', label: 'Report post', description: "We won't let them know who reported this." },
+    {
+      icon: 'fas fa-times-circle',
+      iconColor: 'text-red-500',
+      label: 'Hide post',
+      description: 'See fewer posts like this.',
+    },
+    {
+      icon: 'fas fa-exclamation-circle',
+      iconColor: 'text-red-500',
+      label: 'Report post',
+      description: "We won't let them know who reported this.",
+    },
   ],
 ];
 
@@ -109,7 +123,8 @@ const GroupPost: React.FC<IProps> = ({ post }) => {
                         >
                           <span
                             className={`mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gray-200 text-base dark:bg-neutral-600 ${
-                              item.iconColor ?? 'text-gray-700 dark:text-gray-200'
+                              item.iconColor ??
+                              'text-gray-700 dark:text-gray-200'
                             }`}
                           >
                             <i className={item.icon}></i>
@@ -151,7 +166,7 @@ const GroupPost: React.FC<IProps> = ({ post }) => {
       </div>
 
       {/* Stats row */}
-      <div className="flex items-center justify-between border-b border-gray-200 px-3 py-1.5 text-sm dark:border-neutral-700 sm:px-4">
+      <div className="flex items-center justify-between border-b border-gray-200 px-3 py-1.5 text-sm sm:px-4 dark:border-neutral-700">
         <div className="flex items-center gap-1">
           <div className="flex">
             {uniqueReactions.map((r, i) => (
@@ -166,9 +181,13 @@ const GroupPost: React.FC<IProps> = ({ post }) => {
           <span className="text-gray-500 dark:text-gray-400">{post.likes}</span>
         </div>
         <div className="flex items-center gap-3 text-gray-500 dark:text-gray-400">
-          <button className="hover:underline">{post.commentsCount} comments</button>
+          <button className="hover:underline">
+            {post.commentsCount} comments
+          </button>
           {post.sharesCount > 0 && (
-            <button className="hover:underline">{post.sharesCount} shares</button>
+            <button className="hover:underline">
+              {post.sharesCount} shares
+            </button>
           )}
         </div>
       </div>
@@ -227,9 +246,15 @@ const GroupPost: React.FC<IProps> = ({ post }) => {
                 </div>
                 <div className="mt-0.5 flex items-center gap-3 px-2 text-xs text-gray-500 dark:text-gray-400">
                   <span>{moment(comment.createdAt).fromNow()}</span>
-                  <button className="font-semibold hover:underline">Like</button>
-                  <button className="font-semibold hover:underline">Reply</button>
-                  <button className="font-semibold hover:underline">Share</button>
+                  <button className="font-semibold hover:underline">
+                    Like
+                  </button>
+                  <button className="font-semibold hover:underline">
+                    Reply
+                  </button>
+                  <button className="font-semibold hover:underline">
+                    Share
+                  </button>
                   {comment.likes > 0 && (
                     <span className="ml-auto flex items-center gap-1">
                       {comment.likes}
@@ -262,16 +287,26 @@ const GroupPost: React.FC<IProps> = ({ post }) => {
               alt="You"
               className="h-8 w-8 shrink-0 rounded-full object-cover"
             />
-            <div className="flex flex-1 items-center rounded-full bg-gray-100 px-3 py-2 dark:bg-neutral-700 sm:px-4">
+            <div className="flex flex-1 items-center rounded-full bg-gray-100 px-3 py-2 sm:px-4 dark:bg-neutral-700">
               <span className="min-w-0 truncate text-sm text-gray-400 dark:text-gray-500">
-                Comment as Saiful
+                Comment as Jibon Roy
               </span>
               <div className="ml-auto flex shrink-0 items-center gap-1.5 text-gray-400 sm:gap-2">
-                <button><i className="far fa-smile text-sm"></i></button>
-                <button className="hidden xs:block"><i className="far fa-grin text-sm"></i></button>
-                <button><i className="far fa-image text-sm"></i></button>
-                <button className="hidden sm:block"><i className="fas fa-sticker text-sm"></i></button>
-                <button className="hidden sm:block"><i className="far fa-heart text-sm"></i></button>
+                <button>
+                  <i className="far fa-smile text-sm"></i>
+                </button>
+                <button className="xs:block hidden">
+                  <i className="far fa-grin text-sm"></i>
+                </button>
+                <button>
+                  <i className="far fa-image text-sm"></i>
+                </button>
+                <button className="hidden sm:block">
+                  <i className="fas fa-sticker text-sm"></i>
+                </button>
+                <button className="hidden sm:block">
+                  <i className="far fa-heart text-sm"></i>
+                </button>
               </div>
             </div>
           </div>

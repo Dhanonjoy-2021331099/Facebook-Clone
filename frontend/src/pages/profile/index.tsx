@@ -30,7 +30,7 @@ const ProfilePage: React.FC = () => {
             </div>
           </div>
           <div className="mx-auto h-full px-3 sm:px-10">
-            <div className="flex flex-col gap-3 border-b pb-5 dark:border-stone-700 sm:flex-row sm:items-end sm:gap-5">
+            <div className="flex flex-col gap-3 border-b pb-5 sm:flex-row sm:items-end sm:gap-5 dark:border-stone-700">
               <div className="z-10 -mt-8 h-[7rem] w-[7rem] flex-shrink-0 sm:h-[10.25rem] sm:w-[10.25rem]">
                 <img
                   className="h-full w-full rounded-full border-4 border-primary"
@@ -39,8 +39,8 @@ const ProfilePage: React.FC = () => {
                 />
               </div>
               <div className="flex flex-1 flex-col pb-2">
-                <p className="text-2xl font-bold text-black dark:text-gray-200 sm:text-[2rem]">
-                  Saiful Islam Shihab
+                <p className="text-2xl font-bold text-black sm:text-[2rem] dark:text-gray-200">
+                  Jibon Roy
                 </p>
                 <a className="cursor-pointer text-sm font-semibold text-gray-600 hover:underline dark:text-gray-300">
                   528 friends
@@ -142,12 +142,12 @@ const ProfilePage: React.FC = () => {
                 <div className="flex flex-col items-center">
                   <p className="text-sm">Silence among noise</p>
                   <a
-                    href="https://saiful-islam.vercel.app"
+                    href="https://jibon-roy.vercel.app"
                     target="__blank"
                     rel="noreferrer"
                     className="text-sm text-primary hover:underline"
                   >
-                    https://saiful-islam.vercel.app
+                    https://jibon-roy.vercel.app
                   </a>
                 </div>
                 <button className="w-full rounded-md bg-gray-100 px-3 py-1.5 text-sm font-semibold hover:bg-gray-200 focus:outline-none dark:bg-neutral-700 dark:hover:bg-neutral-600">
@@ -166,9 +166,9 @@ const ProfilePage: React.FC = () => {
                     <i className="fas fa-graduation-cap text-[1.25rem] text-gray-400"></i>
                   </span>
                   <p>
-                    Studied B.Sc in SWE at{' '}
+                    Studied B.Sc in CSE at{' '}
                     <span className="font-semibold">
-                      Daffodil International University
+                      Shahjalal University of Science and Technology
                     </span>
                   </p>
                 </div>
@@ -177,7 +177,7 @@ const ProfilePage: React.FC = () => {
                     <i className="fas fa-home text-[1.25rem] text-gray-400"></i>
                   </span>
                   <p>
-                    Lives in <span className="font-semibold">Dhaka</span>
+                    Lives in <span className="font-semibold">Sylhet</span>
                   </p>
                 </div>
                 <div className="flex items-center space-x-2">
@@ -187,7 +187,7 @@ const ProfilePage: React.FC = () => {
                   <p>
                     From{' '}
                     <span className="font-semibold">
-                      Chandpur, Chittagong, Bangladesh
+                      Gaibandha, Rangpur, Bangladesh
                     </span>
                   </p>
                 </div>
@@ -207,9 +207,9 @@ const ProfilePage: React.FC = () => {
                     className="cursor-pointer hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://www.facebook.com/isishihab"
+                    href="https://www.facebook.com/jibon.r.y.935408/"
                   >
-                    <p>isishihab</p>
+                    <p>Jibon</p>
                   </a>
                 </div>
                 <div className="flex items-center space-x-2">
@@ -222,7 +222,7 @@ const ProfilePage: React.FC = () => {
                     rel="noopener noreferrer"
                     href={'https://instagram.com/_shiha6'}
                   >
-                    <p>_shiha6</p>
+                    <p>_Jibon</p>
                   </a>
                 </div>
                 <div className="flex items-center space-x-2">
@@ -235,7 +235,7 @@ const ProfilePage: React.FC = () => {
                     rel="noopener noreferrer"
                     href={'https://twitter.com/ShihabSWE'}
                   >
-                    <p>ShihabSWE</p>
+                    <p>JibonCSE</p>
                   </a>
                 </div>
                 <div className="flex items-center space-x-2">
@@ -246,9 +246,9 @@ const ProfilePage: React.FC = () => {
                     className="cursor-pointer hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
-                    href={'https://github.com/saifulshihab'}
+                    href={'https://github.com/Dhanonjoy-2021331099/Facebook-Clone/tree/main/backend'}
                   >
-                    <p>saifulshihab</p>
+                    <p>Dhanonjoy-2021331099</p>
                   </a>
                 </div>
                 <div className="flex items-center space-x-2">
@@ -259,9 +259,9 @@ const ProfilePage: React.FC = () => {
                     className="cursor-pointer hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"
-                    href={'https://www.behance.net/saifulis1am'}
+                    href={'https://www.behance.net/jibonroy'}
                   >
-                    <p>saifulis1am</p>
+                    <p>Jibon Roy</p>
                   </a>
                 </div>
               </div>

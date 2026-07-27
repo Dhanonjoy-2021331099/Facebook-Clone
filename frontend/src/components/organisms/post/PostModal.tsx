@@ -200,7 +200,7 @@ const PostModal: React.FC<IProps> = ({ post, isOpen, onClose }) => {
                 </div>
                 <input
                   type="text"
-                  placeholder="Comment as Saiful Islam Shihab"
+                  placeholder="Comment as Jibon Roy"
                   className="flex-1 bg-transparent text-sm text-gray-700 placeholder:text-gray-400 focus:outline-none dark:text-gray-200 dark:placeholder:text-gray-500"
                 />
                 <button className="text-primary hover:opacity-80 focus:outline-none">

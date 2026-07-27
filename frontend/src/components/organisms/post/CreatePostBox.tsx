@@ -19,7 +19,7 @@ const CreatePostBox: React.FC = () => {
             onClick={() => setIsOpen(true)}
             className="h-10 flex-grow rounded-full bg-gray-100 pl-5 text-left text-gray-500 hover:bg-gray-200 focus:bg-gray-300 focus:outline-none dark:bg-neutral-700 dark:text-gray-300 dark:hover:bg-neutral-600 dark:focus:bg-neutral-700"
           >
-            What&apos;s on your mind, Shihab?
+            What&apos;s on your mind, Jibon?
           </button>
         </div>
         <div className="-mb-1 flex space-x-1 text-sm font-thin sm:space-x-3">
