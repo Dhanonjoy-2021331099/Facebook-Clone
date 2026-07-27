@@ -3,6 +3,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 
 const connectDB = require("./config/db");
+const postRoutes = require("./routes/postRoutes");
 
 dotenv.config();
 
@@ -12,6 +13,8 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+
+app.use("/posts", postRoutes);
 
 app.get("/", (req, res) => {
   res.send("Backend is Running 🚀");
